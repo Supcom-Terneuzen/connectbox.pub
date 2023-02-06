@@ -81,4 +81,9 @@ else
  echo dir /apps/cron already exists
 fi
 
+wget https://raw.githubusercontent.com/Supcom-Terneuzen/connectbox.pub/main/crontab.setup
+crontab crontab.setup
+
+
+
 echo End script
