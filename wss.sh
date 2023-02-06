@@ -67,14 +67,14 @@ else
 fi
 
 
-if [ ! -d "/apps" ] ; then
+if [[ ! -e "/apps" ]] ; then
  echo create dir apps
  mkdir "/apps"
 else 
  echo dir apps already exists
 fi
  
-if [ ! -d "/apps/cron" ] ; then
+if [[ ! -e "/apps/cron" ]] ; then
  echo create dir /apps/cron
  mkdir "/apps/cron"
 else
