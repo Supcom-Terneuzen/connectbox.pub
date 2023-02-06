@@ -17,7 +17,13 @@ apt-get upgrade -y
 #echo tmpfs    /mnt/ramdisk    tmpfs    defaults,noatime,nosuid,size=200m    0 0 >> /etc/fstab
 
 apt-get install mc hdparm screen sendemail nmap autossh arp-scan lsof -y
-ssh-keygen -f $HOME/.ssh/id_rsa -t rsa -N ''
+
+if [[ ! -f $HOME/.ssh/id_rsa ]]
+then
+    echo "create ssh key."
+    ssh-keygen -f $HOME/.ssh/id_rsa -t rsa -N ''    
+fi
+
 
 #cd /usr/share/arp-scan/ && get-oui -u https://linuxnet.ca/ieee/oui.txt
 
