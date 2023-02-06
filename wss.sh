@@ -77,14 +77,14 @@ fi
 if [[ ! -e "/apps/cron" ]] ; then
  echo create dir /apps/cron
  mkdir "/apps/cron"
- echo "#!/bin/bash" > /apps/cron/5m.sh
- echo "#script 5m" >> /apps/cron/5m.sh
- echo "#!/bin/bash" > /apps/cron/bootstart.sh
- echo "#bootstart" >> /apps/cron/bootstart.sh
- echo "#!/bin/bash" > /apps/cron/endday.sh
- echo "#endday" >> /apps/cron/endday.sh
- echo "#!/bin/bash" > /apps/cron/newday.sh
- echo "#newday" >> /apps/cron/newday.sh
+ echo '#!/bin/bash' > /apps/cron/5m.sh
+ echo '#script 5m' >> /apps/cron/5m.sh
+ echo '#!/bin/bash' > /apps/cron/bootstart.sh
+ echo 'bootstart' >> /apps/cron/bootstart.sh
+ echo '#!/bin/bash' > /apps/cron/endday.sh
+ echo '#endday' >> /apps/cron/endday.sh
+ echo '#!/bin/bash' > /apps/cron/newday.sh
+ echo '#newday' >> /apps/cron/newday.sh
  
 else
  echo dir /apps/cron already exists
