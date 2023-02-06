@@ -67,16 +67,16 @@ else
 fi
 
 
-if [ -d /apps ] ; then
+if [ -d "/apps" ] ; then
  echo create dir apps
- mkdir /apps
+ mkdir "/apps"
 else 
  echo dir apps already exists
 fi
  
-if [ -d /apps/cron ] ; then
+if [ -d "/apps/cron" ] ; then
  echo create dir /apps/cron
- mkdir /apps/cron
+ mkdir "/apps/cron"
 else
  echo dir /apps/cron already exists
 fi
