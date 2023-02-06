@@ -21,7 +21,9 @@ apt-get install mc hdparm screen sendemail nmap autossh arp-scan lsof -y
 if [[ ! -f $HOME/.ssh/id_rsa ]]
 then
     echo "create ssh key."
-    ssh-keygen -f $HOME/.ssh/id_rsa -t rsa -N ''    
+    ssh-keygen -f $HOME/.ssh/id_rsa -t rsa -N ''  
+else
+    echo "ssh key already exist."
 fi
 
 
