@@ -85,13 +85,11 @@ if [[ ! -e "/apps/cron" ]] ; then
  echo '#endday' >> /apps/cron/endday.sh
  echo '#!/bin/bash' > /apps/cron/newday.sh
  echo '#newday' >> /apps/cron/newday.sh
- 
+ wget https://raw.githubusercontent.com/Supcom-Terneuzen/connectbox.pub/main/crontab.setup
+ crontab crontab.setup
 else
  echo dir /apps/cron already exists
 fi
-
-wget https://raw.githubusercontent.com/Supcom-Terneuzen/connectbox.pub/main/crontab.setup
-crontab crontab.setup
 
 
 
