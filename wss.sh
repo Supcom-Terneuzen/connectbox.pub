@@ -16,7 +16,7 @@ apt-get upgrade -y
 #mkdir /mnt/ramdisk
 #echo tmpfs    /mnt/ramdisk    tmpfs    defaults,noatime,nosuid,size=200m    0 0 >> /etc/fstab
 
-apt-get install mc hdparm screen sendemail nmap autossh arp-scan lsof -y
+apt-get install mc dnsutils hdparm screen sendemail nmap autossh arp-scan lsof -y
 
 if [[ ! -f $HOME/.ssh/id_rsa ]]
 then
